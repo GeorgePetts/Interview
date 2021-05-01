@@ -1,0 +1,14 @@
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\bin\Debug\netcoreapp2.1\EmployeesAPI.deps.json
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\bin\Debug\netcoreapp2.1\EmployeesAPI.runtimeconfig.json
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\bin\Debug\netcoreapp2.1\EmployeesAPI.runtimeconfig.dev.json
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\bin\Debug\netcoreapp2.1\EmployeesAPI.dll
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\bin\Debug\netcoreapp2.1\EmployeesAPI.pdb
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\obj\Debug\netcoreapp2.1\EmployeesAPI.csprojAssemblyReference.cache
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\obj\Debug\netcoreapp2.1\EmployeesAPI.csproj.CoreCompileInputs.cache
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\obj\Debug\netcoreapp2.1\EmployeesAPI.AssemblyInfoInputs.cache
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\obj\Debug\netcoreapp2.1\EmployeesAPI.AssemblyInfo.cs
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\obj\Debug\netcoreapp2.1\EmployeesAPI.dll
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\obj\Debug\netcoreapp2.1\EmployeesAPI.pdb
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\CMIT\Source\Repos\DackTest\EmployeesAPI\obj\Debug\netcoreapp2.1\EmployeesAPI.genruntimeconfig.cache

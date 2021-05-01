@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    List<SelectListItem> lstDepartment = (List<SelectListItem>)(ViewData["Departments"]);
+    List<SelectListItem> lstEmployee = (List<SelectListItem>)(ViewData["Employees"]);
+    List<SelectListItem> lstSubDepartment = (List<SelectListItem>)(ViewData["SubDepartments"]);
+}
+@model IEnumerable<DackTest.Models.vwDepartment>
+<br />
+<div class="row">
+    <div class="col-sm-3"><select name="DepartmentID" id="DepartmentID" asp-items="@lstDepartment" class="form-control"><option value="">Select a Department ...</option></select></div>
+    <div class="col-sm-3"><select name="EmployeeID" id="EmployeeID" asp-items="@lstEmployee" class="form-control"><option value="">Select an Employee ...</option></select></div>
+    <div class="col-sm-3"><select name="SubDepartmentID" id="SubDepartmentID" asp-items="@lstSubDepartment" class="form-control"><option value="">Select a Job Title ...</option></select></div>
+    <div class="col-sm-3"><button class="btn btn-primary" style="background-color: #69b532;" onclick="updatePage()">Find ...</button></div>
+    </div>
+    <section id="secMain">@{Html.RenderPartial("Deps", Model);}</section>
+
+<script type="text/javascript">
+    function updatePage() {
+        var DepartmentID = null;
+        var EmployeeID = null;
+        var SubDepartmentID = null;
+
+        var PostURL = '@Url.Action("Deps")'
+
+        if ($("#DepartmentID").val() != '')
+            DepartmentID = $("#DepartmentID").val()
+
+        if ($("#EmployeeID").val() != '')
+            EmployeeID = $("#EmployeeID").val()
+
+        if ($("#SubDepartmentID").val() != '')
+            SubDepartmentID = $("#SubDepartmentID").val()
+
+        var sendData = { DepartmentID: DepartmentID, EmployeeID: EmployeeID, SubDepartmentID: SubDepartmentID };
+
+        $.ajax({
+            type: "POST",
+            url: PostURL,
+            contentType: "application/json",
+            dataType: "text",
+            data: JSON.stringify(sendData),
+            success: function (data) {
+                $("#secMain").html(data);
+            }, //End of AJAX Success function  
+
+            failure: function (data) {
+                alert(data.responseText);
+            }, //End of AJAX failure function  
+            error: function (data) {
+                alert(data.responseText);
+            } //End of AJAX error function  
+
+        });         
+
+
+    }
+</script>

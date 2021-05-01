@@ -1,0 +1,50 @@
+﻿@model IEnumerable<DackTest.Models.vwDepartment>
+       <div class="DnnModule DnnModule-DNN_HTML DnnModule-29854">
+            <a name="29854"></a>
+            <div class="White">
+                <div id="dnn_ctr29854_ContentPane" class="contentpane">
+                    <!-- Start_Module_29854 --><div id="dnn_ctr29854_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+    @foreach (var item in Model)
+    {
+
+        <div id="dnn_ctr29854_HtmlModule_lblContent" class="Normal">
+            <div class="out_team pb-10">
+                <h4 class="common_h4 animation fadeInDown" style="color: #69b532;">@Html.DisplayFor(modelItem => item.DepartmentName)</h4>
+                @{ var cnt = item.Employees.Count();
+                    DackTest.Models.IEmployee[] people = item.Employees.ToArray();}
+                @for (int i = 0; i < cnt; i += 2)
+                {
+                <div class="row">
+                    <div class="col-sm-6 animation fadeInDown">
+                        <div class="introduce_box">
+                            <div class="col-sm-4 introduce member1"><img alt="" class="img-responsive" src="/images/@people[i].ProfileImage" /><p></p> </div>
+                            <div class="introduce member1">
+                                <h3 style="color: #69b532;">@people[i].FirstName&nbsp;@people[i].LastName</h3>
+                                <h4>@people[i].SubDepartmentName</h4>
+                                <p>@people[i].Bio  <br /><a href="@people[i].TwitterProfileLink"><img src="~/images/twitter.png" style="height:20px; width:20px;" /></a><a href="@people[i].FBProfileLink"><img src="/images/1200px-Facebook_icon.svg.png" style="height:20px; width:20px;" /></a></p>
+                            </div>
+                        </div>
+                    </div>
+                    @if ((i + 1) < cnt)
+                    {
+                    <div class="col-sm-6 animation fadeInDown">
+                        <div class="introduce_box">
+                           <div class="col-sm-4 introduce member1"> <img alt="" class="img-responsive" src="/images/@people[i + 1].ProfileImage" /><p></p></div>
+                           <div class="introduce member2">
+                               <h3 style="color: #69b532;">@people[i + 1].FirstName&nbsp;@people[i + 1].LastName</h3>
+                               <h4>@people[i + 1].SubDepartmentName</h4>
+                               <p>@people[i + 1].Bio</p>
+                               <p><a href="@people[i+1].TwitterProfileLink"><img src="~/images/twitter.png" style="height:20px; width:20px;" /></a><a href="@people[i + 1].FBProfileLink"><img src="/images/1200px-Facebook_icon.svg.png" style="height:20px; width:20px;" /></a></p>
+                           </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+                };
+
+            </div>
+        </div>
+    }
+    </div><!-- End_Module_29854 -->
+                </div>
+            </div>
