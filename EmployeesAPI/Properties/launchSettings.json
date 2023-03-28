@@ -19,7 +19,7 @@
     "EmployeesAPI": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/employees",
+      "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

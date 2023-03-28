@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DackTest.Models
+namespace NetaphorTest.Models
 {
     public class vwDepartment
     {

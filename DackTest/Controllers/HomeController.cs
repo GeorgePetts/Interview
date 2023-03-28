@@ -4,10 +4,10 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using DackTest.Models;
-using DackTest.DomainModels;
+using NetaphorTest.Models;
+using NetaphorTest.DomainModels;
 
-namespace DackTest.Controllers
+namespace NetaphorTest.Controllers
 {
     public class HomeController : Controller
     {

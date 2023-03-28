@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
 
-namespace DackTest.DomainModels
+namespace NetaphorTest.DomainModels
 {
     public partial class DACKContext : DbContext
     {

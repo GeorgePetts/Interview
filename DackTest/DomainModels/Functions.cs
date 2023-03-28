@@ -4,12 +4,12 @@ using System.Linq;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
-using DackTest.Models;
+using NetaphorTest.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 
-namespace DackTest.DomainModels
+namespace NetaphorTest.DomainModels
 {
     public static class Functions
     {

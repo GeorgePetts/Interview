@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DackTest.DomainModels
+namespace NetaphorTest.DomainModels
 {
     public partial class Department
     {

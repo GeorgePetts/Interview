@@ -4,7 +4,7 @@
     List<SelectListItem> lstEmployee = (List<SelectListItem>)(ViewData["Employees"]);
     List<SelectListItem> lstSubDepartment = (List<SelectListItem>)(ViewData["SubDepartments"]);
 }
-@model IEnumerable<DackTest.Models.vwDepartment>
+@model IEnumerable<NetaphorTest.Models.vwDepartment>
 <br />
 <div class="row">
     <div class="col-sm-3"><select name="DepartmentID" id="DepartmentID" asp-items="@lstDepartment" class="form-control"><option value="">Select a Department ...</option></select></div>

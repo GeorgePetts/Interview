@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
+
 namespace EmployeesAPI
 {
     public class Startup
@@ -26,6 +27,21 @@ namespace EmployeesAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
+                {
+                    Version = "v1",
+                    Title = "Example",
+                    Description = "Documented API",
+                    Contact = new Swashbuckle.AspNetCore.Swagger.Contact()
+                    {
+                        Name = "George Petts",
+                        Email = "george.petts@outlook.com",
+                        Url = ""
+                    }
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,6 +53,11 @@ namespace EmployeesAPI
             }
 
             app.UseMvc();
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Example");
+            });
         }
     }
 }

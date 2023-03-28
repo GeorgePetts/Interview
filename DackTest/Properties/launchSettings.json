@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "DackTest": {
+    "NetaphorTest": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
