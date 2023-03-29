@@ -14,7 +14,16 @@ Database
 
 The database is exactly like the script provided by a previous interviewing company, with the exception of a stored procedure added to provide the data for the API.  The API calls the stored procedure via entity framework.  The MVC uses the three tables in the database to populate the dropdowns.  The stored procedure definition is in sp_Employees.sql.
 
-A backup of the database is in Dacktest/data_backup.
+If you want to tunthe database in Docker first run: 
+'docker-compose -f docker-compose.local.yml up --build'
+
+This will create a db server in docker with the sa password shown in docker-compose.local.yml
+
+Connect to the database and run the script in PettsExample.sql
+
+You app should be ready to go.
+
+Also, a backup of the database is in Dacktest/data_backup.
 
 The connection string is stored in the appsettings.json files for both projects.  the appsettings.json file for the MVC projects also contains the URL for the API.
 
