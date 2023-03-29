@@ -1,5 +1,6 @@
-# Manish
-DACK Test Project
+# Netaphor
+
+Netaphor Project
 
 Solution and Projects
 
@@ -11,7 +12,9 @@ The MVC project posts three parameters to the Web API in a JSON object, retrieve
 
 Database
 
-The database resides on a Azure cloud server and is exactly like the script provided by DACK, with the exception of a stored procedure added to provide the data for the API.  The API calls the stored procedure via entity framework.  The MVC uses the three tables in the database to populate the dropdowns.  The stored procedure definition is in sp_Employees.sql.
+The database is exactly like the script provided by a previous interviewing company, with the exception of a stored procedure added to provide the data for the API.  The API calls the stored procedure via entity framework.  The MVC uses the three tables in the database to populate the dropdowns.  The stored procedure definition is in sp_Employees.sql.
+
+A backup of the database is in Dacktest/data_backup.
 
 The connection string is stored in the appsettings.json files for both projects.  the appsettings.json file for the MVC projects also contains the URL for the API.
 
@@ -21,4 +24,3 @@ How This Code Could be Improved.
 2.  Put the page's javascript in a separate file.
 3.  Make the page talk directly to the Web API and have the javascript code mix the HTML with the data.
 
-docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Netaph0r" -p 1433:1433 --name sql2019 -h sql2019 -d mcr.microsoft.com/mssql/server:2019-latest
