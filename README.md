@@ -20,3 +20,5 @@ How This Code Could be Improved.
 1.  Have a separate class library containing the classes the projects have in common, or at least the interfaces. Also the dbContext for the database.
 2.  Put the page's javascript in a separate file.
 3.  Make the page talk directly to the Web API and have the javascript code mix the HTML with the data.
+
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Netaph0r" -p 1433:1433 --name sql2019 -h sql2019 -d mcr.microsoft.com/mssql/server:2019-latest
